@@ -763,6 +763,9 @@ img {
   line-height: 1.17;
   letter-spacing: 0.01em;
   margin-bottom: 10px;
+  outline: none;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-label {
@@ -776,6 +779,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  outline: none;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -800,6 +804,15 @@ img {
   cursor: pointer;
 }
 
+.input-hover:focus-within .modal-input,
+.form-field:focus-within .comment {
+  border-color: var(--accent-color);
+}
+
+.input-hover:focus-within .input-icon {
+  fill: var(--accent-color);
+}
+
 .form-field .comment {
   resize: none;
   width: 100%;
@@ -809,6 +822,9 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  outline: none;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field textarea::placeholder {
